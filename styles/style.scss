@@ -89,7 +89,7 @@ body{
         border-bottom: 1px solid $Verydarkblue3;
         padding-bottom: 30px;
         &__eth{
-            background-image: url(../images/icon-ethereum.svg);
+            background-image: url(./images/icon-ethereum.svg);
             background-repeat: no-repeat;
             text-decoration: none;
             color: $Cyan;
@@ -97,7 +97,7 @@ body{
             padding-left: 1.2rem;
         }
         &__days{
-            background-image: url(../images/icon-clock.svg);
+            background-image: url(./images/icon-clock.svg);
             background-repeat: no-repeat;
             color:$Softblue;
             text-decoration: none;
