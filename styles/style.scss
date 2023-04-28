@@ -1,0 +1,142 @@
+
+
+$Softblue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Verydarkblue1:hsl(217, 54%, 11%);
+$Verydarkblue2:hsl(216, 50%, 16%);
+$Verydarkblue3:hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: $Verydarkblue1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 590px;
+    width: 345px;
+    margin: 10% auto;
+    background-color:$Verydarkblue2;
+    border-radius: 15px;
+    box-shadow: 0 0 60px 3px rgb(1, 8, 19);
+    
+    &__img{
+        width: 300px;
+        height: 300px;
+        border-radius: 1rem;
+        &__hover{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top:0%;
+            left: 0%;     
+            height: 99%;
+            width: 100%;
+            border-radius: 1rem;
+            opacity: 0%;
+            &:hover{
+                opacity: 100%;
+                background-color: hsl(178, 100%, 50%,0.3);
+                cursor: pointer;
+            }  
+            
+            
+
+        }
+       
+
+        &__container{
+            position: relative;
+            margin-top: 23px;
+            overflow: hidden;
+        }
+
+    }
+    &__header{
+        margin-top: 15px;
+        text-align: start;
+        
+        &__title{
+            color:$White;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover{
+                color: $Cyan;
+            }
+        }
+        &__p{
+            font-size: 18px;
+            color: $Softblue;
+            font-weight: 300;
+        }
+    }
+    &__main{
+        margin-top: 10px;
+        border-bottom: 1px solid $Verydarkblue3;
+        padding-bottom: 30px;
+        &__eth{
+            background-image: url(/images/icon-ethereum.svg);
+            background-repeat: no-repeat;
+            text-decoration: none;
+            color: $Cyan;
+            margin-right: 90px;
+            padding-left: 1.2rem;
+        }
+        &__days{
+            background-image: url(/images/icon-clock.svg);
+            background-repeat: no-repeat;
+            color:$Softblue;
+            text-decoration: none;
+            padding-left: 1.5rem;
+        }
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+        font-weight:400;
+        color: $Softblue; 
+        margin-right: 60px;
+        margin-top: 15px;
+        &__img{
+            width:30px;
+            height:30px;
+            border: solid 1px white;
+            border-radius: 20px;
+            margin-right: 15px;
+        }
+        &__p{
+           color: white;
+           text-decoration: none;
+           &:hover{
+            color: $Cyan;
+           }
+        }
+    }
+}
+
+.footer{
+    margin-top: auto;
+    margin-bottom: 10px;
+    &__attribution { font-size: 11px; text-align: center; 
+    color:$Softblue;
+    & a{
+        text-decoration: none;
+        color:$White;
+    }
+    }
+}
+
